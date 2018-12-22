@@ -28,4 +28,7 @@ public class Blood {
     public void setBloodName(String bloodName) {
         this.bloodName = bloodName;
     }
+
+
+
 }
