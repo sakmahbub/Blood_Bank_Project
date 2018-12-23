@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.mahbub.bloodbank.entity</OriginalElement>
+  <nodes>
+    <node x="145.0" y="135.0">com.mahbub.bloodbank.entity.Patient</node>
+    <node x="65.25" y="336.0">com.mahbub.bloodbank.entity.Request</node>
+    <node x="317.0" y="124.0">com.mahbub.bloodbank.entity.User</node>
+    <node x="323.0" y="0.0">com.mahbub.bloodbank.entity.Role</node>
+    <node x="61.25" y="0.0">com.mahbub.bloodbank.entity.Blood</node>
+    <node x="0.0" y="124.0">com.mahbub.bloodbank.entity.Hospital</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.mahbub.bloodbank.entity.User" target="com.mahbub.bloodbank.entity.Role">
+      <point x="-37.25" y="-158.0" />
+      <point x="354.25" y="99.0" />
+      <point x="357.25" y="99.0" />
+      <point x="-34.25" y="37.0" />
+    </edge>
+    <edge source="com.mahbub.bloodbank.entity.Hospital" target="com.mahbub.bloodbank.entity.Blood">
+      <point x="31.25" y="-81.0" />
+      <point x="93.75" y="99.0" />
+      <point x="116.75" y="99.0" />
+      <point x="-18.5" y="37.0" />
+    </edge>
+    <edge source="com.mahbub.bloodbank.entity.Patient" target="com.mahbub.bloodbank.entity.Blood">
+      <point x="-31.75" y="-70.0" />
+      <point x="176.75" y="99.0" />
+      <point x="153.75" y="99.0" />
+      <point x="18.5" y="37.0" />
+    </edge>
+    <edge source="com.mahbub.bloodbank.entity.Request" target="com.mahbub.bloodbank.entity.Patient">
+      <point x="17.5" y="-59.0" />
+      <point x="152.75" y="311.0" />
+      <point x="176.75" y="311.0" />
+      <point x="-31.75" y="70.0" />
+    </edge>
+    <edge source="com.mahbub.bloodbank.entity.Request" target="com.mahbub.bloodbank.entity.Hospital">
+      <point x="-52.5" y="-59.0" />
+      <point x="82.75" y="311.0" />
+      <point x="31.25" y="311.0" />
+      <point x="-31.25" y="81.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="104.49999999999994" y="242.18181818181816" />
+  <SelectedNodes>
+    <node>com.mahbub.bloodbank.entity.Patient</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -28,8 +28,7 @@ public class User {
     private String weight;
     private String address;
     private Date date;
-    private String country;
-    private String city;
+
 
 
     @Column (name = "Mobile", unique = true)
@@ -122,21 +121,7 @@ public class User {
         this.date = date;
     }
 
-    public String getCountry() {
-        return country;
-    }
 
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
 
     public String getMobile() {
         return mobile;
