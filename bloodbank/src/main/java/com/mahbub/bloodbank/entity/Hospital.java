@@ -23,10 +23,6 @@ public class Hospital {
 
 
 
-    @ManyToOne
-    @JoinColumn(name = "blood_id", nullable =false)
-    private Blood blood;
-
 
     public long getId() {
         return id;
@@ -70,11 +66,5 @@ public class Hospital {
 
 
 
-    public Blood getBlood() {
-        return blood;
-    }
 
-    public void setBlood(Blood blood) {
-        this.blood = blood;
-    }
 }

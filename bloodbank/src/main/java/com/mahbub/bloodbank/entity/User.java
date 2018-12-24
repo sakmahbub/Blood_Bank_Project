@@ -27,7 +27,7 @@ public class User {
     private String Sex;
     private String weight;
     private String address;
-    private Date date;
+   private Date regisDate;
 
 
 
@@ -113,15 +113,13 @@ public class User {
         this.address = address;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getRegisDate() {
+        return regisDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setRegisDate(Date regisDate) {
+        this.regisDate = regisDate;
     }
-
-
 
     public String getMobile() {
         return mobile;
