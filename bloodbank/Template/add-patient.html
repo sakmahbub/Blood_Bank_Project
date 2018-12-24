@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
+  <title>Blood Bank - Add Donor /Mahbub</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -40,9 +40,9 @@
         </li>
         
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
+          <a class="nav-link" href="summary.html">
             <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Tables</span>
+            <span class="nav-link-text">Summary</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Role">
@@ -84,7 +84,49 @@
 		
 		
 		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="patient">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#patient" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-user"></i>
+            <span class="nav-link-text">Patient</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="patient">
+            <li>
+              <a href="add-patient.html">Add Patient</a>
+            </li>
+            <li>
+              <a href="edit-patient.html">Edit Patient</a>
+            </li>
+			<li>
+              <a href="patient-list.html">Patient List</a>
+            </li>
+          </ul>
+        </li>
 		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="blood">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#blood" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-list"></i>
+            <span class="nav-link-text">Human Blood</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="blood">
+            <li>
+              <a href="blood.html">Blood types</a>
+            </li>
+            
+          </ul>
+        </li>
+		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Hospital">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#Hospital" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-home"></i>
+            <span class="nav-link-text">Hospital</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="Hospital">
+            <li>
+              <a href="hospital.html">Hospital List</a>
+            </li>
+            
+          </ul>
+        </li>
 		
 		
 		
@@ -104,9 +146,7 @@
             <li>
               <a href="forgot-password.html">Forgot Password Page</a>
             </li>
-            <li>
-              <a href="blank.html">Blank Page</a>
-            </li>
+            
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
@@ -141,9 +181,9 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
-            <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Link</span>
+          <a class="nav-link" href="blog.html">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Blogs</span>
           </a>
         </li>
       </ul>
@@ -266,185 +306,65 @@
         </li>
         <li class="breadcrumb-item active">Tables</li>
       </ol>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
       <!-- Example DataTables Card-->
       <div class="card mb-3">
-	  <div class="card-header">
-          
-		
-		  
-		  </div>
+
 	  
-        <div class="card-header">
-          <i class="fa fa-table"></i>  Donor Data Table</div>
+        <div class="breadcrumb">
+         Patient Adding Table
+		</div>
+		
         <div class="card-body">
           <div class="table-responsive">
             
-			<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              <thead>
-                <tr>
-				  <th>id</th>
-                  <th>user_name</th>
-                  <th>password</th>
-                  <th>blood_group</th>
-                  <th>full_name</th>
-                  <th>age</th>
-                  <th>Sex</th>
-				  <th>weight</th>
-                  <th>address</th>
-                  <th>date</th>
-                  <th>Mobile</th>
-                  <th>Email</th>
-				  <th>role_id</th>
-                </tr>
-              </thead>
-              <tfoot>
-                <tr>
-				  <th>id</th>
-                  <th>user_name</th>
-                  <th>password</th>
-                  <th>blood_group</th>
-                  <th>full_name</th>
-                  <th>age</th>
-                  <th>Sex</th>
-				  <th>weight</th>
-                  <th>address</th>
-                  <th>date</th>
-                  <th>Mobile</th>
-                  <th>Email</th>
-				  <th>role_id</th>
-                </tr>
-              </tfoot>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>mostafi900</td>
-                  <td>123456</td>
-                  <td>B+</td>
-                  <td>Mostafizur Rahman</td>
-                  <td>27</td>
-				  <td>Male</td>
-                  <td>54</td>
-				  <td>Mirpur-2</td>
-                  <td>16-12-2018</td>
-				  <td>01633321732</td>
-                  <td>mos@gmail.com</td>
-				  <td>2</td>
-                  
-                  
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-                  
-                </tr>
-				
-                <tr>
-                  <td>3</td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-                  
-                </tr>
-				
-				
-				<tr>
-                  <td>4</td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-                  
-                </tr>
-				
-				
-				<tr>
-                  <td>5</td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-                  
-                </tr>
-				
-				
-				<tr>
-                  <td>6</td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-                  
-                </tr>
-				
-				
-				<tr>
-                  <td>7</td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-                  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-                  
-                </tr>
-                
-              </tbody>
-            </table>
+            <form class="breadcrumb">
+			<table>
+			     <tr>
+			       <td>Patient ID:</td>
+				   <td><input type="text" name="id"/></td>
+			     </tr>
+			
+			     <tr>
+			       <td>Name:</td>
+				   <td><input type="text" name="pname"/></td>
+			     </tr>
+			    <tr>
+			       <td>Phone No:</td>
+				   <td><input type="text" name="phone"/></td>
+			     </tr>
+			     <tr>
+			       <td>Hospital Name:</td>
+				   <td><input type="text" name="hosname"/></td>
+			     </tr>
+				 
+				 <tr>
+			       <td>Blood_id:</td>
+				   <td><input type="text" name="bloodId"/></td>
+			     </tr>
+				 
+				 
+				 
+			       <td></td>
+				   <td><input type="submit" value="Add"/>
+				   <input type="reset" value="Reset"/></td>
+			     </tr>
+				 
+				 
+			</table>
+		  </form>
+            
               
              
           </div>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        
       </div>
     </div>
     <!-- /.container-fluid-->

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
+  <title>Blood Bank - Edit Role /Mahbub</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -40,9 +40,9 @@
         </li>
         
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
+          <a class="nav-link" href="summary.html">
             <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Tables</span>
+            <span class="nav-link-text">Summary</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Role">
@@ -83,7 +83,49 @@
         </li>
 		
 		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="patient">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#patient" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-user"></i>
+            <span class="nav-link-text">Patient</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="patient">
+            <li>
+              <a href="add-patient.html">Add Patient</a>
+            </li>
+            <li>
+              <a href="edit-patient.html">Edit Patient</a>
+            </li>
+			<li>
+              <a href="patient-list.html">Patient List</a>
+            </li>
+          </ul>
+        </li>
 		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="blood">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#blood" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-list"></i>
+            <span class="nav-link-text">Human Blood</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="blood">
+            <li>
+              <a href="blood.html">Blood types</a>
+            </li>
+            
+          </ul>
+        </li>
+		
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Hospital">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#Hospital" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-home"></i>
+            <span class="nav-link-text">Hospital</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="Hospital">
+            <li>
+              <a href="hospital.html">Hospital List</a>
+            </li>
+            
+          </ul>
+        </li>
 		
 		
 		
@@ -104,9 +146,7 @@
             <li>
               <a href="forgot-password.html">Forgot Password Page</a>
             </li>
-            <li>
-              <a href="blank.html">Blank Page</a>
-            </li>
+            
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
@@ -141,9 +181,9 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
-            <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Link</span>
+          <a class="nav-link" href="blog.html">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Blogs</span>
           </a>
         </li>
       </ul>
@@ -278,12 +318,15 @@
       <div class="card mb-3">
 
 	  
-        <div class="card-header">
-          <i class="fa fa-table"></i>  Role Updating Table</div>
+        <div class="breadcrumb">
+         Role Updating Table
+		</div>
+		
         <div class="card-body">
           <div class="table-responsive">
             
-            <form>
+            <form class="breadcrumb">
+			
 			<table>
 			     <tr>
 			       <td>Role ID:</td>
@@ -303,7 +346,7 @@
 				 
 				 
 			     <tr>
-			       <td><br></td>
+			       <td></td>
 				   <td><input type="submit" value="Update"/>
 				   <input type="submit" value="Delete"/>
 				   <input type="reset" value="Reset"/></td>
