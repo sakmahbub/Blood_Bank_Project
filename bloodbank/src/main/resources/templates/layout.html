@@ -31,15 +31,16 @@
 <div th:replace="~{fragments/navbar.html :: main-navbar}"></div>
 <div layout:fragment="custom-content"> content will go here</div>
 <div th:replace="~{fragments/footer.html :: copyright}"></div>
-<div th:replace="~{fragments/underfooter.html :: under-footer}"></div>
 </div>
 
 
 
 
-<script href="/js/sb-admin.min.js" th:href="@{/js/sb-admin.min.js}"></script>
-<script href="/js/sb-admin-charts.min.js" th:href="@{/js/sb-admin-charts.min.js}"></script>
-<script href="/js/sb-admin-datatables.min.js" th:href="@{/js/sb-admin-datatables.min.js}"></script>
+<script src="/js/sb-admin.min.js" th:src="@{/js/sb-admin.min.js}"></script>
+<script src="/js/sb-admin-charts.min.js" th:src="@{/js/sb-admin-charts.min.js}"></script>
+<script src="/js/sb-admin-datatables.min.js" th:src="@{/js/sb-admin-datatables.min.js}"></script>
+
+
 <!-- Bootstrap core JavaScript-->
 <script src="vendor/jquery/jquery.min.js" th:src="@{vendor/jquery/jquery.min.js}"></script>
 
