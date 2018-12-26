@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Blood Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="Content-Security-Policy">
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" th:href="@{vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" th:href="@{vendor/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" th:href="@{vendor/datatables/dataTables.bootstrap4.css}" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" th:href="@{css/sb-admin.css}" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+<div class="content-wrapper">
+<div th:replace="~{fragments/navbar.html :: main-navbar}"></div>
+<div layout:fragment="custom-content"> content will go here</div>
+<div th:replace="~{fragments/footer.html :: copyright}"></div>
+<div th:replace="~{fragments/underfooter.html :: under-footer}"></div>
+</div>
+
+
+
+
+<script href="/js/sb-admin.min.js" th:href="@{/js/sb-admin.min.js}"></script>
+<script href="/js/sb-admin-charts.min.js" th:href="@{/js/sb-admin-charts.min.js}"></script>
+<script href="/js/sb-admin-datatables.min.js" th:href="@{/js/sb-admin-datatables.min.js}"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js" th:src="@{vendor/jquery/jquery.min.js}"></script>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js" th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- Core plugin JavaScript-->
+
+<script src="vendor/jquery-easing/jquery.easing.min.js" th:src="@{vendor/jquery-easing/jquery.easing.min.js}"></script>
+<!-- Page level plugin JavaScript-->
+
+<script src="vendor/chart.js/Chart.min.js" th:src="@{vendor/chart.js/Chart.min.js}"></script>
+<script src="vendor/datatables/jquery.dataTables.js" th:src="@{vendor/datatables/jquery.dataTables.js}"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.js" th:src="@{vendor/datatables/dataTables.bootstrap4.js}"></script>
+
+
+
+</body>
+</html>
